@@ -1,0 +1,12 @@
+---
+skills:
+- id: 1
+  title: 'Fake skill #1'
+  description: Bowstaff
+- id: 2
+  title: 'Fake skill #2'
+  description: Wombat wrangling.
+- id: 3
+  title: 'Fake skill #3'
+  description: Meowing.
+total: 3

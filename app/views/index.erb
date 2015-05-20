@@ -1,1 +1,14 @@
-<h1>My Skills</h1>
+<h1 id="skills_title">My Skills</h1>
+
+<button class="homepage_button"><a id="index_button" href="../">Back to Homepage</a></button>
+
+<div id="list">
+  <% @skills.each do |skill| %>
+    <h3><%= skill.id %>: <a href="/skills/<%= skill.id %>"><%= skill.title %></a></h3>
+    <button><a href="/skills/<%= skill.id %>/edit">Edit</a></button>
+    <form action="/skills/<%= skill.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input id="delete_input" type="submit" value="Delete"/>
+    </form>
+  <% end %>
+</div>
